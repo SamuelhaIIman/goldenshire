@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Goldenshire</string>
+    <string name="goldenshire_text">
+        Goldenshire represents a butler who is associated with opulence, luxury, and possesses a taste for the finer things in life.
+        This name suggests a butler who can create an atmosphere of grandeur, ensuring that every aspect of the household reflects the
+        golden standard of service.
+    </string>
 </resources>

@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -17,7 +19,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Goldenshire represents a butler who is associated with opulence, luxury, and possesses a taste for the finer things in life. This name suggests a butler who can create an atmosphere of grandeur, ensuring that every aspect of the household reflects the golden standard of service."
+            android:text="@string/goldenshire_text"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="240dp"
             android:maxHeight="30dp"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
@@ -38,26 +42,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <Button
+            android:id="@+id/notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Notes" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textSize="20dp"
             android:text="Press"
-            android:layout_margin="5dp"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textSize="20dp"
             android:text="Press"
-            android:layout_margin="5dp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Press"
-            android:layout_margin="5dp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Press"
-            android:layout_margin="5dp"/>
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
