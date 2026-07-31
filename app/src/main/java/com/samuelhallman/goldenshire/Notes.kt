@@ -13,7 +13,6 @@ class Notes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.notes)
 
-
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             title = "Notes"
@@ -25,7 +24,7 @@ class Notes : AppCompatActivity() {
         val addInput = findViewById<Button>(R.id.addInput)
 
         val items = mutableListOf<String>()
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
+        val adapter = ArrayAdapter(this, R.layout.list_item, items)
         list.adapter = adapter
 
         addInput.setOnClickListener {

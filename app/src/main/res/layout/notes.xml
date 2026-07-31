@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/gray"
+    android:background="@color/black"
     tools:context=".Notes">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,7 +51,6 @@
             android:id="@+id/yourListView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/addItemName"
             app:layout_constraintEnd_toEndOf="parent"
