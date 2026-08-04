@@ -25,7 +25,8 @@
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
         <EditText
             android:id="@+id/addItemName"
             android:layout_width="match_parent"
@@ -46,7 +47,8 @@
             app:layout_constraintTop_toTopOf="@id/addItemName"
             app:layout_constraintBottom_toBottomOf="@id/addItemName"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="Add item"/>
+            android:text="Add item"
+            />
         <ListView
             android:id="@+id/yourListView"
             android:layout_width="match_parent"
@@ -55,7 +57,8 @@
             app:layout_constraintTop_toBottomOf="@id/addItemName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,13 @@ package com.samuelhallman.goldenshire
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ListView
+import android.widget.TextView
 
 
 class Notes : AppCompatActivity() {
@@ -24,7 +27,25 @@ class Notes : AppCompatActivity() {
         val addInput = findViewById<Button>(R.id.addInput)
 
         val items = mutableListOf<String>()
-        val adapter = ArrayAdapter(this, R.layout.list_item, items)
+
+        val adapter = object : ArrayAdapter<String>(this, R.layout.list_item, items) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = convertView ?: layoutInflater.inflate(R.layout.list_item, parent, false)
+
+                val itemText = view.findViewById<TextView>(R.id.itemText)
+                val removeButton = view.findViewById<Button>(R.id.removeButton)
+
+                itemText.text = items[position]
+
+                removeButton.setOnClickListener {
+                    items.removeAt(position)
+                    notifyDataSetChanged()
+                }
+
+                return view
+            }
+        }
+
         list.adapter = adapter
 
         addInput.setOnClickListener {
