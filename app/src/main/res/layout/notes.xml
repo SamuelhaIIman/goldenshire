@@ -29,14 +29,15 @@
             />
         <EditText
             android:id="@+id/addItemName"
+            android:labelFor="@id/addItemName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:autofillHints="name"
             android:background="@color/white"
+            android:inputType="text"
             app:layout_constraintTop_toBottomOf="@id/description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/addInput"
-            android:labelFor="@+id/testing"
             />
         <Button
             android:id="@+id/addInput"

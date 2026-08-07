@@ -43,26 +43,29 @@
         app:layout_constraintEnd_toEndOf="parent">
         <Button
             android:id="@+id/notes"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/green"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Notes" />
         <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/green"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Press"
             />
         <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/green"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Press"
             />
     </LinearLayout>
