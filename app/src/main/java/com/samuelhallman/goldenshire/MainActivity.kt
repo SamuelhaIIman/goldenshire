@@ -19,11 +19,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val button = findViewById<Button>(R.id.notes)
-        button.setOnClickListener {
+        val notes = findViewById<Button>(R.id.notes)
+        notes.setOnClickListener {
             val intent = Intent(this, Notes::class.java)
             startActivity(intent)
         }
+
+        val groq = findViewById<Button>(R.id.groq)
+        groq.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
+
         supportActionBar?.apply {
             setBackgroundDrawable(resources.getDrawable(R.color.green, theme))
         }
