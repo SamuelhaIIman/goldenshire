@@ -61,13 +61,14 @@
             android:text="Groq"
             />
         <Button
+            android:id="@+id/calendar"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/green"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:text="Press"
+            android:text="Calendar"
             />
     </LinearLayout>
 

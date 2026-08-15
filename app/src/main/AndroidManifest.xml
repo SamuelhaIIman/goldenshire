@@ -24,7 +24,11 @@
         <activity
             android:name=".Notes"
             android:exported="false"/>
-        <activity android:name=".ChatActivity"
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
             android:exported="false" />
     </application>
 

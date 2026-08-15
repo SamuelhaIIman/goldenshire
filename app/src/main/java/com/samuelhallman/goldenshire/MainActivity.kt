@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val calendar = findViewById<Button>(R.id.calendar)
+        calendar.setOnClickListener {
+            val intent = Intent(this, CalendarActivity::class.java)
+            startActivity(intent)
+        }
+
         supportActionBar?.apply {
             setBackgroundDrawable(resources.getDrawable(R.color.green, theme))
         }
