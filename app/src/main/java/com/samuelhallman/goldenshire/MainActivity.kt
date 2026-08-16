@@ -19,19 +19,19 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val notes = findViewById<Button>(R.id.notes)
+        val notes = findViewById<Button>(R.id.btnNotes)
         notes.setOnClickListener {
             val intent = Intent(this, Notes::class.java)
             startActivity(intent)
         }
 
-        val groq = findViewById<Button>(R.id.groq)
+        val groq = findViewById<Button>(R.id.btnGroq)
         groq.setOnClickListener {
             val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
 
-        val calendar = findViewById<Button>(R.id.calendar)
+        val calendar = findViewById<Button>(R.id.btnCalendar)
         calendar.setOnClickListener {
             val intent = Intent(this, CalendarActivity::class.java)
             startActivity(intent)
