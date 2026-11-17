@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val checkBox = findViewById<Button>(R.id.btnCheckbox)
+        checkBox.setOnClickListener {
+            val intent = Intent(this, CheckboxActivity::class.java)
+            startActivity(intent)
+        }
+
         supportActionBar?.apply {
             setBackgroundDrawable(resources.getDrawable(R.color.green, theme))
         }
